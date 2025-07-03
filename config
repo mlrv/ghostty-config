@@ -46,14 +46,52 @@
 # Theme
 theme = nord
 
+# Advanced Font & Ligature Configuration
+font-feature = "ss01"  # != and ===
+font-feature = "ss02"  # <= and >=
+font-feature = "ss03"  # -> and ~>
+font-feature = "ss04"  # <> and </>
+font-feature = "liga"  # //, ..., ||
+font-thicken = true
+adjust-underline-position = 40%
+adjust-underline-thickness = -60%
+
 # Panes navigation
 keybind = performable:cmd+h=goto_split:left
 keybind = performable:cmd+j=goto_split:down
 keybind = performable:cmd+k=goto_split:up
 keybind = performable:cmd+l=goto_split:right
 
+# Smarter window management
+window-save-state = always
+window-width = 143
+window-height = 41
+window-padding-x = 4
+window-inherit-font-size = true
+
 # Make unfocused splits significantly more transparent
 unfocused-split-opacity = 0.4
 
 # Ensure good contrast for text readability
 minimum-contrast = 3
+
+# Clipboard
+copy-on-select = clipboard
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
+
+# macOS specific
+macos-titlebar-style = transparent
+macos-auto-secure-input = true
+
+# Enable URL detection
+link-url = true
+
+# Performance
+scrollback-limit = 1000000
+window-vsync = true
+
+# Terminal type for better compatibility
+term = xterm-256color
+
+auto-update = download
